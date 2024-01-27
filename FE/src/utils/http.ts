@@ -1,14 +1,12 @@
 import axios, { AxiosInstance } from "axios";
-
 class Http {
   instance: AxiosInstance;
+
   constructor() {
     this.instance = axios.create({
       baseURL: "https://dummyjson.com/",
       timeout: 10000,
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers: { "Content-Type": "application/json" },
     });
   }
 }
